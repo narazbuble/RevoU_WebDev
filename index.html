@@ -3,10 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootcamp</title>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <h1>this is RevoU Bootcamp for web dev</h1>
-    <p>and this another update</p>
+    <h1 id="head">TO DO LIST WEBSITE</h1>
+    <p id="hc">this is my final task RevoU Bootcamp for web dev and for me too ofc</p>
+
+    <!-- STATS -->
+  <section class="stats">
+  <div class="card">
+    <p>TotalTasks</p>
+    <h2 id="totalTasks">0</h2>
+  </div>
+  <div class="card">
+    <p>Completed</p>
+    <h2 id="completedTasks">0</h2>
+  </div>
+  <div class="card">
+    <p>Pending</p>
+    <h2 id="pendingTasks">0</h2>
+  </div>
+  <div class="card">
+    <p>Progress</p>
+    <h2 id="progress">0%</h2>
+  </div>
+  </section>
+
+
+   <!-- ADD TODO -->
+  <section class="add-todo">
+  <input id="todoInput" type="text" placeholder="Add a todo..." />
+  <input id="dateInput" type="date" />
+  <button id="addBtn" class="add-btn">+</button>
+  </section>
+
+  <!-- SEARCH -->
+  <section class="search">
+  <input id="searchInput" type="text" placeholder="Search tasks..." />
+  </section>
+
+
+  <!-- FILTER & SORT -->
+  <section class="controls">
+    <button>Filter</button>
+    <button>Sort</button>
+  </section>
+
+  <!-- DELETE ALL -->
+  <section class="delete-all">
+   <button id="deleteAllBtn">Delete All</button>
+  </section>
+
+  <!-- TABLE -->
+  <section class="table">
+  <div class="table-head">
+    <span>Task</span>
+    <span>Due Date</span>
+    <span>Status</span>
+    <span>Actions</span>
+  </div>
+
+  <div id="todoList"></div>
+
+  <div id="empty" class="empty">
+    <p>No tasks found</p>
+  </div>
+</section>
+
 </body>
+<script src="js/script.js"></script>
 </html>

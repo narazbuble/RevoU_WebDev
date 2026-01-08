@@ -1,0 +1,137 @@
+#head{
+  background: rgb(230, 150, 194);
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#hc{
+  background: rgb(244, 178, 214);
+  padding: 1px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #e7e7ea;
+  padding: 20px;
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* ADD TODO */
+.add-todo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.add-todo input {
+  padding: 12px;
+  flex: 1;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.add-btn {
+  padding: 12px 18px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  background: #ff00b7;
+  color: white;
+  cursor: pointer;
+}
+
+/* SEARCH */
+.search input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* CONTROLS */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* DELETE ALL */
+.delete-all button {
+  width: 100%;
+  padding: 14px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* TABLE */
+.table-head {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.empty {
+  text-align: center;
+  color: gray;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* DELETE*/
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/*button*/
+.status-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #ffd966;
+}
+
+.status-btn.done {
+  background: #4cd964;
+  color: white;
+}
+
+.delete-all button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
